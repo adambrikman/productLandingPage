@@ -1,0 +1,197 @@
+/* CSS Mini Reset */
+html, body, div, form, fieldset, legend, label
+{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, th, td, caption { font-weight:normal; }
+img { border: 0; }
+/* END CSS RESET */
+
+.flex{
+  display: flex;
+}
+
+html {
+    background-color:  #F7FEF7;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F7FEF7;
+}
+
+#logo {
+  width: 55vw;
+}
+
+#header-img {
+  max-width: 330px;
+  display: flex;
+  margin-left: 20px;
+}
+
+#nav-bar ul{
+  color: black;
+  list-style-type: none;
+  width: 35vw;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-link{
+  color: black;
+  text-decoration: none;
+}
+
+#nav-bar a:hover {
+  color: #4CAF50;
+}
+
+#entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
+  margin-bottom: -40px;
+}
+
+#entry h2 {
+  font-weight: bold;
+  font-size: 27px;
+}
+
+#email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;  
+  width: 300px;
+}
+
+#form #submit{
+  display: flex;
+  margin: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 80px;
+}
+
+#container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.icon {
+  color: #4CAF50;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-right: 60px;
+}
+
+.flavorText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  padding-bottom: 20px;  
+  align-items: left;
+}
+
+.flavorText h2, .flavorText p{
+  margin: 0;
+}
+
+#how-it-works {
+  text-align: center;
+}
+
+/* Position price tables */
+#pricing {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Create 3 columns of equal width*/
+.columns{
+  padding: 8px;
+  min-width: 350px;
+}
+
+/* Style the list */
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: white;
+}
+
+/* Pricing header */
+.price .priceHeading {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+/* List items */
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Add shadow to purchase button */
+.button:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+}
+
+@media(max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+.input-field {
+  box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+}
